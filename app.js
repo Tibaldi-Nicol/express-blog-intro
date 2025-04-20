@@ -56,7 +56,10 @@ app.get('/',(req, res)=>{
     res.send("server del mio blog");
 });
 
-
+// Rotta per la bacheca
+app.get('/bacheca', (req, res)=>{
+    res.json(posts);
+});
 
 //il server qui rimane ad ascoltare 
 app.listen(port,()=>{
